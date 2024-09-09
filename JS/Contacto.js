@@ -1,20 +1,21 @@
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita el envío por defecto del formulario
 
-    const nombre = document.getElementById("nombre").value;
-    const email = document.getElementById("email").value;
-    const mensaje = document.getElementById("mensaje").value;
-    const responseMessage = document.getElementById("formResponse");
+    // Captura los valores del formulario
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var mensaje = document.getElementById("mensaje").value;
 
-    // Simulación de procesamiento del formulario
-    if (nombre && email && mensaje) {
-        responseMessage.innerText = "Gracias por contactarnos, " + nombre + ". Te responderemos pronto.";
-        responseMessage.style.color = "green";
+    // Validación simple
+    if (nombre === "" || email === "" || mensaje === "") {
+        document.getElementById("formResponse").innerText = "Por favor, completa todos los campos.";
+        document.getElementById("formResponse").style.color = "red";
     } else {
-        responseMessage.innerText = "Por favor, completa todos los campos.";
-        responseMessage.style.color = "red";
-    }
+        // Muestra un mensaje de éxito
+        document.getElementById("formResponse").innerText = "Gracias por contactarnos, " + nombre + ". Nos comunicaremos contigo pronto.";
+        document.getElementById("formResponse").style.color = "green";
 
-    // Limpiar los campos después del envío
-    document.getElementById("contactForm").reset();
+        // Aquí puedes agregar la lógica para enviar el formulario a un servidor si es necesario
+        document.getElementById("contactForm").reset(); // Limpia el formulario
+    }
 });

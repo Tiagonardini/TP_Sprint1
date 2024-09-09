@@ -1,10 +1,14 @@
-/* Estilos básicos */
+ 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0; 
 }
+main {
+    padding-bottom: 60px;  
+}
+
 
 .header {
     display: flex;
@@ -21,7 +25,7 @@ body {
 }
 
 nav {
-    background-color: #003366; /* Azul más oscuro */
+    background-color: #003366;  
     padding: 10px;
     text-align: center;
 }
@@ -34,10 +38,10 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #00264d; /* Azul aún más oscuro */
+    background-color: #00264d;  
 }
 
-/* Estilos para Misión y Visión con efecto hover */
+ 
 .vision-mision {
     display: flex;
     color: #003366;
@@ -53,18 +57,18 @@ nav a:hover {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease; 
 }
 
 .vision:hover, .mision:hover {
-    transform: scale(1.05); /* Efecto de escalado en hover */
+    transform: scale(1.05);  
 }
 
 .resumen {
     color: #003366;
     padding: 20px;
     text-align: center;
-    background-color: #f0f0f0; /* Color más claro que el header */
+    background-color: #f0f0f0;  
     border-radius: 10px;
     margin: 20px;
 }
@@ -78,7 +82,7 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    margin-bottom: 40px; /* Añade espacio extra debajo de las imágenes */
+    margin-bottom: 40px;  
 }
 
 .imagenes img {
@@ -91,6 +95,48 @@ nav a:hover {
     padding: 20px;
     text-align: center;
 }
+ 
+.quienes-somos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #003366;
+}
+
+.quienes-somos h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.integrantes {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.integrante {
+    width: 25%;
+    text-align: center;
+}
+
+.integrante img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.integrante h3 {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.integrante p {
+    font-size: 16px;
+    color: #666;
+}
+
 
 footer {
     background-color: #003366;

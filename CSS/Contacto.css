@@ -1,4 +1,4 @@
-/* Estilo general */
+ 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,16 +6,18 @@ body {
     box-sizing: border-box;
 }
 
-header {
+.header {
+    display: flex;
+    align-items: center;
     background-color: #004080;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 20px;
 }
 
-header img {
-    height: 50px;
-    vertical-align: middle;
+.header img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
 }
 
 h1 {
@@ -25,7 +27,7 @@ h1 {
 }
 
 nav {
-    background-color: #0066cc;
+    background-color: #003366;  
     padding: 10px;
     text-align: center;
 }
@@ -33,54 +35,50 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    padding: 14px 20px;
+    display: inline-block;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #00264d; 
 }
-
 main {
     padding: 20px;
 }
-
-/* Contenedor para el contenido de contacto */
+ 
 .contacto-contenido {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
 }
-
-/* Estilo para el formulario */
+ 
 .contacto-form {
-    width: 45%;
+    width: 48%;
     background-color: #e0e0e0;
     padding: 20px;
     border-radius: 10px;
 }
 
+ 
 .contacto-form h2 {
-    font-size: 24px;
+    color: #004080;
 }
 
-.contacto-form label {
+ 
+label, input, textarea {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 10px;  
 }
-
-.contacto-form input,
-.contacto-form textarea {
-    width: 100%;
+ 
+input, textarea {
+    width: 70%;  
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
-
-.contacto-form button {
+ 
+button {
     background-color: #004080;
     color: white;
     padding: 10px 20px;
@@ -89,17 +87,16 @@ main {
     cursor: pointer;
 }
 
-.contacto-form button:hover {
+button:hover {
     background-color: #003366;
 }
-
-/* Estilo para la información de contacto */
+ 
 .informacion-contacto {
     width: 45%;
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
-    text-align: right;
+    text-align: center;
 }
 
 .informacion-contacto h2 {
@@ -114,8 +111,7 @@ main {
 .informacion-contacto li {
     margin-bottom: 10px;
 }
-
-/* Redes sociales */
+ 
 .redes-sociales {
     list-style-type: none;
     padding: 0;
@@ -124,7 +120,7 @@ main {
 .redes-sociales li {
     margin-bottom: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -137,23 +133,20 @@ main {
 .redes-sociales li a:hover {
     color: #003366;
 }
-
-/* Iconos de redes sociales */
+ 
 .redes-sociales img {
     width: 24px;
     height: 24px;
     vertical-align: middle;
 }
-
-/* Estilo del pie de página */
+ 
 footer {
     background-color: #004080;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
-
-/* Estilo responsivo para móviles */
+ 
 @media (max-width: 768px) {
     .contacto-contenido {
         flex-direction: column;

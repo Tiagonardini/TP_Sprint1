@@ -1,0 +1,103 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+nav {
+    background-color: #003366; /* Azul más oscuro */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #00264d; /* Azul aún más oscuro */
+}
+
+/* Estilos para Misión y Visión con efecto hover */
+.vision-mision {
+    display: flex;
+    color: #003366;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.vision, .mision {
+    width: 45%;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.vision:hover, .mision:hover {
+    transform: scale(1.05); /* Efecto de escalado en hover */
+}
+
+.resumen {
+    color: #003366;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0; /* Color más claro que el header */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.resumen-content {
+    padding: 20px;
+    color: black;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 40px; /* Añade espacio extra debajo de las imágenes */
+}
+
+.imagenes img {
+    width: 22%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tracking {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

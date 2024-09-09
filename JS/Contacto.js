@@ -1,21 +1,21 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita el envío por defecto del formulario
+// Archivo: JS/Contacto.js
 
-    // Captura los valores del formulario
-    var nombre = document.getElementById("nombre").value;
-    var email = document.getElementById("email").value;
-    var mensaje = document.getElementById("mensaje").value;
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío automático del formulario
+
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const mensaje = document.getElementById('mensaje').value;
+    const formResponse = document.getElementById('formResponse');
 
     // Validación simple
-    if (nombre === "" || email === "" || mensaje === "") {
-        document.getElementById("formResponse").innerText = "Por favor, completa todos los campos.";
-        document.getElementById("formResponse").style.color = "red";
+    if (nombre && email && mensaje) {
+        formResponse.innerHTML = "¡Gracias por contactarnos, " + nombre + "! Te responderemos pronto.";
+        formResponse.style.color = "green";
+        // Limpiar el formulario
+        document.getElementById('contactForm').reset();
     } else {
-        // Muestra un mensaje de éxito
-        document.getElementById("formResponse").innerText = "Gracias por contactarnos, " + nombre + ". Nos comunicaremos contigo pronto.";
-        document.getElementById("formResponse").style.color = "green";
-
-        // Aquí puedes agregar la lógica para enviar el formulario a un servidor si es necesario
-        document.getElementById("contactForm").reset(); // Limpia el formulario
+        formResponse.innerHTML = "Por favor, completa todos los campos.";
+        formResponse.style.color = "red";
     }
 });

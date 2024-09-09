@@ -19,3 +19,4 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         formResponse.style.color = "red";
     }
 });
+
